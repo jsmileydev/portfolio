@@ -131,6 +131,10 @@ nav a:hover {
   width: 320px;
 }
 
+.project-tile:hover {
+  background: #445f78;
+}
+
 .project-tile img {
   height: 200px;
   width: 320px;
