@@ -40,6 +40,7 @@ nav li {
   padding: 10px;
   box-sizing: border-box;
   width: 20%;
+  text-transform: uppercase;
 }
 
 nav a:hover {
@@ -70,14 +71,25 @@ nav a:hover {
 }
 
 #welcome-section h1 {
+  position: relative;
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 2em;
+  top: 20vh;
+  text-align: center;
+}
+
+/*#welcome-section #name {
+  position: absolute;
+  left: 10vw;
+  top: 30vh;
+}
+
+#welcome-section #job-title {
   position: absolute;
   right: 10vw;
   top: 30vh;
-  font-size: 2em;
-  font-weight: 100;
-  text-align: right;
-  line-height: 2em;
-}
+}*/
 
 @media (max-width: 500px) {
   #welcome-section {
@@ -124,11 +136,10 @@ nav a:hover {
 
 .project-tile {
   display: inline-block;
-  border: 7px solid #445f78;
   border-radius: 15px;
-  padding: 3px;
+  padding: 5px;
   margin: 50px;
-  width: 320px;
+  width: auto;
 }
 
 .project-tile:hover {
@@ -138,7 +149,7 @@ nav a:hover {
 .project-tile img {
   height: 200px;
   width: 320px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .project-name {
