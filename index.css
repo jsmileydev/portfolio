@@ -1,0 +1,333 @@
+html {
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* NAVIGATION BAR */
+nav {
+  position: relative;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  height: 20px;
+  font-size: 16px;
+  background-color: #fff;
+  padding: 16px;
+}
+nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+}
+nav li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+nav a {
+  color: #737373;
+}
+nav a:hover {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  nav li {
+    font-size: 4vw;
+    width: 33.33%;
+  }
+}
+/* HERO SCREEN */
+#welcome-section {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 90vh;
+  /*background-color: #FA6900;*/
+  color: #fff;
+  font-family: "Yeseva One", cursive;
+}
+#welcome-section h1,
+#welcome-section p {
+  position: relative;
+  font-size: 32px;
+  font-weight: 100;
+  line-height: 36px;
+  top: 25vh;
+  text-align: center;
+}
+#welcome-section p {
+  font-size: 28px;
+}
+#welcome-section #header-line {
+  width: 15%;
+  position: relative;
+}
+
+#welcome-section::before {
+  background-image: url(https://raw.githubusercontent.com/jsmileydev/portfolio/goldfish/images/office-bg.png);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  content: "";
+  top: 20px;
+  display: block;
+  position: absolute;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+  z-index: -2;
+  opacity: 0.8;
+}
+
+#welcome-section::after {
+  background-color: #fa6900;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+  #welcome-section {
+    height: 80vh;
+  }
+
+  #welcome-section h1,
+#welcome-section p {
+    font-size: 28px;
+    line-height: 32px;
+    top: 20vh;
+  }
+}
+@media (max-width: 800px) {
+  #welcome-section {
+    height: 80vh;
+  }
+}
+@media (max-width: 600px) {
+  #welcome-section {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #welcome-section {
+    height: 50vh;
+  }
+
+  #welcome-section h1,
+#welcome-section p {
+    font-size: 20px;
+    line-height: 24px;
+    top: 15vh;
+  }
+
+  #welcome-section::before {
+    background-position: top;
+  }
+}
+/* INTRO AND PROJECT TILES */
+#projects {
+  position: relative;
+  top: 0;
+  height: auto;
+  background: #fff;
+}
+#projects #descr h3 {
+	margin: 36px 0 24px 0;
+}
+#projects #descr #lang-row {
+  height: auto;
+  text-align: center;
+}
+#projects #descr #lang-row img {
+  float: none;
+  margin: 20px;
+}
+#projects #descr h4 {
+  display: block;
+  margin: 0 auto;
+  width: 70vw;
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+}
+#projects #descr #story {
+  margin: 36px 48px 64px 48px;
+}
+#projects #descr #story img {
+  float: left;
+  margin: 0 12px;
+}
+#projects #project-line {
+  width: 20%;
+}
+#projects h3 {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 100;
+  font-size: 32px;
+}
+#projects #project-link {
+  background-color: #69d2e7;
+  padding: 36px;
+}
+#projects #project-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+  padding: 35px;
+}
+#projects #project-grid .project-tile {
+  display: inline-block;
+  overflow: hidden;
+  margin: 30px;
+  width: auto;
+}
+#projects #project-grid .project-tile img {
+  height: 200px;
+  width: 320px;
+  border: 1px solid darkgrey;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#projects #project-grid .project-tile img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
+}
+#projects #project-grid .project-tile .project-name {
+  text-align: center;
+  padding: 12px;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  #descr #lang-row img {
+    display: inline-block;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #projects h3 {
+    font-size: 28px;
+  }
+  #projects #descr #lang-row img {
+    display: inline-block;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+  }
+  #projects #descr h4 {
+    margin: 28px auto;
+  }
+  #projects #descr #story img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+  }
+  #projects #descr #story p {
+    margin: 0 auto;
+    font-size: 16px;
+    padding-top: 28px;
+  }
+  #projects #project-grid .project-tile img {
+    height: auto;
+    width: 80vw;
+  }
+}
+/* CONTACT BAR */
+#contact {
+  position: relative;
+  bottom: 0;
+  background: #69d2e7;
+  height: auto;
+  padding: 20px 20vw;
+}
+#contact h4 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 24px;
+}
+#contact #contact-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px 0;
+}
+#contact #contact-links .contact-icon {
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+}
+#contact #contact-links .contact-icon img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+	#contact {
+		padding: 20px 10vw;
+	}
+  #contact #contact-links .contact-icon {
+    font-size: 4.5vw;
+  }
+}
+/* FOOTER */
+footer {
+  background: #fff;
+  font-size: 14px;
+  text-align: right;
+  padding: 5px;
+}
