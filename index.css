@@ -74,7 +74,6 @@ nav a:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 90vh;
-  /*background-color: #FA6900;*/
   color: #fff;
   font-family: "Yeseva One", cursive;
 }
@@ -215,7 +214,6 @@ nav a:hover {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #fff;
   padding: 35px;
 }
 #projects #project-grid .project-tile {
@@ -326,7 +324,6 @@ nav a:hover {
 }
 /* FOOTER */
 footer {
-  background: #fff;
   font-size: 14px;
   text-align: right;
   padding: 5px;
