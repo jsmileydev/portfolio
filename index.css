@@ -218,13 +218,14 @@ nav a:hover {
 }
 #projects #project-grid .project-tile {
   display: inline-block;
+  text-align: center;
   overflow: hidden;
   margin: 30px;
   width: auto;
 }
 #projects #project-grid .project-tile img {
   height: 200px;
-  width: 320px;
+  width: auto;
   border: 1px solid darkgrey;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
