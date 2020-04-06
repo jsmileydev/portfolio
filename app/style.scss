@@ -12,7 +12,7 @@ body {
 }
 
 a {
-	color: #000;
+	color: #000000;
 	text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ nav {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
 	nav {
 		li {
 			font-size: 4vw;
@@ -124,7 +124,7 @@ nav {
 	opacity: 0.95;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
 	#welcome-section {
 		height: 80vh;
 		h1,
@@ -135,17 +135,17 @@ nav {
 		}
 	}
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	#welcome-section {
 		height: 80vh;
 	}
 }
-@media (max-width: 600px) {
+@media (max-width: 576px) {
 	#welcome-section {
 		height: 60vh;
 	}
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
 	#welcome-section {
 		height: 50vh;
 		h1,
@@ -244,7 +244,7 @@ nav {
 	}
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
 	#descr {
 		#lang-row {
 			img {
@@ -256,7 +256,7 @@ nav {
 		}
 	}
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 576px) {
 	#projects {
 		h3 {
 			font-size: 28px;
@@ -333,7 +333,7 @@ nav {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
 	#contact {
 		padding: 20px 10vw;
 		#contact-links {
