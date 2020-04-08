@@ -74,7 +74,7 @@ footer {
 }
 
 #projects #descr h3 {
-  margin: 2em 0 1.5em 0;
+  padding: 2em 0 1.5em 0;
 }
 
 #projects #descr #lang-row {
@@ -89,7 +89,7 @@ footer {
 
 #projects #descr h4 {
   display: block;
-  margin: 0 auto;
+  margin: .5em auto;
   width: 70vw;
   text-align: center;
   font-weight: 100;
@@ -118,7 +118,7 @@ footer {
 
 #projects #project-link {
   background-color: #69d2e7;
-  padding: 2.25em;
+  padding: 2em;
 }
 
 #projects #project-grid {
@@ -178,6 +178,10 @@ footer {
     margin: 1.75em auto;
   }
 
+  #projects #descr #story {
+    margin: 2em 2em 4em 2em;
+  }
+
   #projects #descr #story img {
     float: none;
     display: block;
@@ -189,11 +193,17 @@ footer {
   #projects #descr #story p {
     margin: 0 auto;
     padding-top: 1.75em;
+    text-align: justify;
   }
 
   #projects #project-grid .project-tile img {
+    max-width: 100%;
     height: auto;
-    width: 80vw;
+    transition: none;
+  }
+
+  #projects #project-grid .project-tile img:hover {
+    transform: none;
   }
 }
 nav {
@@ -241,28 +251,30 @@ nav a:hover {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  height: 90vh;
+  height: calc(100vh - 2.25rem);
   color: #fff;
   font-family: "Yeseva One",cursive;
 }
 
-#welcome-section h1,
-#welcome-section p {
-  position: relative;
-  font-size: 2em;
+#welcome-section #greeting {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  top: 50vh;
+  left: 0;
+  transform: translate(0,-50%);
+}
+
+#welcome-section #greeting h1,
+#welcome-section #greeting p {
+  font-size: 2rem;
   font-weight: 100;
   line-height: 1.25em;
-  top: 25vh;
   text-align: center;
 }
 
-#welcome-section p {
+#welcome-section #greeting p {
   font-size: 1.5em;
-}
-
-#welcome-section #header-line {
-  width: 15%;
-  position: relative;
 }
 
 #welcome-section::before {
@@ -270,11 +282,11 @@ nav a:hover {
   background-size: 150%;
   background-repeat: no-repeat;
   content: "";
-  top: 20px;
+  bottom: 0;
   display: block;
   position: absolute;
   background-position: center;
-  width: 100%;
+  width: 100vw;
   height: 95vh;
   z-index: -2;
   opacity: .8;
@@ -293,38 +305,47 @@ nav a:hover {
   opacity: .95;
 }
 
-@media (max-width:992px) {
+@media screen and (max-width:992px) and (min-width:740px) {
   #welcome-section {
     height: 80vh;
   }
 
-  #welcome-section h1,
-  #welcome-section p {
-    font-size: 1.75em;
+  #welcome-section #greeting {
+    top: 40vh;
+  }
+
+  #welcome-section #greeting h1,
+  #welcome-section #greeting p {
     line-height: 1.25em;
-    top: 20vh;
   }
 }
 
-@media (max-width:768px) {
-  #welcome-section {
-    height: 80vh;
-  }
-}
-
-@media (max-width:576px) {
+@media screen and (max-width:739px) and (min-width:577px) {
   #welcome-section {
     height: 60vh;
   }
+
+  #welcome-section #greeting {
+    top: 30vh;
+  }
+
+  #welcome-section #greeting h1,
+  #welcome-section #greeting p {
+    font-size: 1.5em;
+  }
 }
 
-@media only screen and (max-width:576px) {
+@media screen and (max-width:576px) {
   #welcome-section {
     height: 50vh;
   }
 
-  #welcome-section h1,
-  #welcome-section p {
+  #welcome-section #greeting {
+    top: 25vh;
+  }
+
+  #welcome-section #greeting h1,
+  #welcome-section #greeting p {
     font-size: 1.25em;
     line-height: 1.5em;
     top: 15vh;
