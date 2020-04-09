@@ -1,0 +1,145 @@
+
+/* INTRO AND PROJECT TILES */
+#projects {
+	position: relative;
+	top: 0;
+	height: auto;
+	width: 100%;
+	background: #fff;
+	#descr {
+		h3 {
+			padding: 2em 0 1.5em 0;
+		}
+		#lang-row {
+			height: auto;
+			text-align: center;
+			img {
+				float: none;
+				margin: 1.25em;
+			}
+		}
+		h4 {
+			display: block;
+			margin: .5em auto;
+			width: 70vw;
+			text-align: center;
+			font-weight: 100;
+			font-size: 1.25em;
+		}
+		#story {
+			margin: 2em 3em 4em 3em;
+			img {
+				float: left;
+				margin: 0 .75em;
+			}
+		}
+	}
+	#project-line {
+		width: 20%;
+	}
+	h3 {
+		margin: 0 auto;
+		text-align: center;
+		font-weight: 100;
+		font-size: 2em;
+	}
+	#project-link {
+		background-color: #69d2e7;
+		padding: 2em;
+	}
+	#project-grid {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		padding: 2.25em;
+		.project-tile {
+			display: inline-block;
+			text-align: center;
+			overflow: hidden;
+			margin: 1.75em;
+			width: auto;
+			img {
+				height: 200px;
+				width: auto;
+				border: 1px solid darkgrey;
+				-webkit-transition: 0.3s;
+				-o-transition: 0.3s;
+				transition: 0.3s;
+			}
+			img:hover {
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				transform: scale(1.1);
+			}
+			.project-name {
+				text-align: center;
+				margin: .75em 0;
+				font-size: 1.25em;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	#descr {
+		#lang-row {
+			img {
+				display: inline-block;
+				margin: .25em;
+				height: 40px;
+				width: 40px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 450px) {
+	#projects {
+		h3 {
+			font-size: 1.75em;
+		}
+		#descr {
+			#lang-row {
+				img {
+					display: inline-block;
+					margin: .25em;
+					height: 30px;
+					width: 30px;
+				}
+			}
+			h4 {
+				margin: 1.75em auto;
+			}
+			#story {
+				margin: 2em 2em 4em 2em;
+				img {
+					float: none;
+					display: block;
+					margin: 0 auto;
+					width: 50px;
+					height: 50px;
+				}
+				p {
+					margin: 0 auto;
+					padding-top: 1.75em;
+					text-align: justify;
+				}
+			}
+		}
+		#project-grid {
+			.project-tile {
+				img {
+					max-width: 100%;
+					height: auto;
+					transition: none;
+				}
+				img:hover {
+					transform: none;
+				}
+			}
+		}
+	}
+}

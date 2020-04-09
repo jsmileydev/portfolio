@@ -1,0 +1,53 @@
+
+/* CONTACT BAR */
+#contact {
+	position: relative;
+	bottom: 0;
+	background: #69d2e7;
+	height: auto;
+	padding: 1.25em 20vw;
+	h4 {
+		text-align: center;
+		font-weight: 100;
+		font-size: 1.5em;
+	}
+	#contact-links {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		padding: 1.25em 0;
+		.contact-icon {
+			display: inline-block;
+			text-align: center;
+			font-size: 1.1em;
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	#contact {
+		padding: 1.25em 10vw;
+		#contact-links {
+			.contact-icon {
+				font-size: 4.5vw;
+			}
+		}
+	}
+}
+
+/* FOOTER */
+footer {
+	font-size: .8em;
+	text-align: right;
+	padding: .75em;
+}

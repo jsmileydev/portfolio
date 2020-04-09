@@ -1,0 +1,97 @@
+/* INTRO AND PROJECT TILES */
+#projects {
+  position: relative;
+  top: 0;
+  height: auto;
+  width: 100%;
+  background: #fff; }
+  #projects #descr h3 {
+    padding: 2em 0 1.5em 0; }
+  #projects #descr #lang-row {
+    height: auto;
+    text-align: center; }
+    #projects #descr #lang-row img {
+      float: none;
+      margin: 1.25em; }
+  #projects #descr h4 {
+    display: block;
+    margin: .5em auto;
+    width: 70vw;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.25em; }
+  #projects #descr #story {
+    margin: 2em 3em 4em 3em; }
+    #projects #descr #story img {
+      float: left;
+      margin: 0 .75em; }
+  #projects #project-line {
+    width: 20%; }
+  #projects h3 {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2em; }
+  #projects #project-link {
+    background-color: #69d2e7;
+    padding: 2em; }
+  #projects #project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2.25em; }
+    #projects #project-grid .project-tile {
+      display: inline-block;
+      text-align: center;
+      overflow: hidden;
+      margin: 1.75em;
+      width: auto; }
+      #projects #project-grid .project-tile img {
+        height: 200px;
+        width: auto;
+        border: 1px solid darkgrey;
+        transition: 0.3s; }
+      #projects #project-grid .project-tile img:hover {
+        transform: scale(1.1); }
+      #projects #project-grid .project-tile .project-name {
+        text-align: center;
+        margin: .75em 0;
+        font-size: 1.25em; }
+
+@media (max-width: 768px) {
+  #descr #lang-row img {
+    display: inline-block;
+    margin: .25em;
+    height: 40px;
+    width: 40px; } }
+
+@media only screen and (max-width: 450px) {
+  #projects h3 {
+    font-size: 1.75em; }
+  #projects #descr #lang-row img {
+    display: inline-block;
+    margin: .25em;
+    height: 30px;
+    width: 30px; }
+  #projects #descr h4 {
+    margin: 1.75em auto; }
+  #projects #descr #story {
+    margin: 2em 2em 4em 2em; }
+    #projects #descr #story img {
+      float: none;
+      display: block;
+      margin: 0 auto;
+      width: 50px;
+      height: 50px; }
+    #projects #descr #story p {
+      margin: 0 auto;
+      padding-top: 1.75em;
+      text-align: justify; }
+  #projects #project-grid .project-tile img {
+    max-width: 100%;
+    height: auto;
+    transition: none; }
+  #projects #project-grid .project-tile img:hover {
+    transform: none; } }
+
+/*# sourceMappingURL=intro.css.map */

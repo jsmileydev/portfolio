@@ -1,0 +1,100 @@
+
+#welcome-section {
+	display: block;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: calc(100vh - 2.25rem);
+	color: #fff;
+	font-family: "Yeseva One", cursive;
+	#greeting {
+		position: absolute;
+		width: 100vw;
+		height: auto;
+		top: 50vh;
+		left: 0;
+		transform: translate(0, -50%);
+		h1,
+		p {
+			//position: relative;
+			font-size: 2rem;
+			font-weight: 100;
+			line-height: 1.25em;
+			//top: 25vh;
+			text-align: center;
+		}
+		p {
+			font-size: 1.5em;
+		}
+	}
+}
+
+#welcome-section::before {
+	background-image: url('../app/images/office-bg.png');
+	background-size: 150%;
+	background-repeat: no-repeat;
+	content: "";
+	bottom: 0;
+	display: block;
+	position: absolute;
+	background-position: center;
+	width: 100vw;
+	height: 95vh;
+	z-index: -2;
+	opacity: 0.8;
+}
+
+#welcome-section::after {
+	background-color: #fa6900;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.95;
+}
+
+@media screen and (max-width:992px) and (min-width: 740px) {
+	#welcome-section {
+		height: 80vh;
+		#greeting {
+			top: 40vh;
+			h1,
+			p {
+				//font-size: 1em;
+				line-height: 1.25em;
+			}
+		}
+	}
+}
+@media screen and (max-width:739px) and (min-width: 577px) {
+	#welcome-section {
+		height: 60vh;
+		#greeting {
+			top: 30vh;
+			h1, p {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+@media screen and (max-width: 576px) {
+	#welcome-section {
+		height: 50vh;
+		#greeting {
+			top: 25vh;
+			h1,
+			p {
+				font-size: 1.25em;
+				line-height: 1.5em;
+				top: 15vh;
+			}
+		}
+	}
+	#welcome-section::before {
+		background-position: top;
+	}
+}
